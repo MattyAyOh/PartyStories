@@ -25,6 +25,13 @@
 		8EB4FEAE18BC2F570022BF8E /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4FEAA18BC2F570022BF8E /* RESideMenu.m */; };
 		8EB4FEAF18BC2F570022BF8E /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4FEAC18BC2F570022BF8E /* UIViewController+RESideMenu.m */; };
 		8EFD6C9D18BC34D700EAD546 /* PSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6C9C18BC34D700EAD546 /* PSMenuViewController.m */; };
+		8EFD6CA118BC3DE900EAD546 /* PSMenuNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6CA018BC3DE900EAD546 /* PSMenuNavigationViewController.m */; };
+		8EFD6CAA18BC3F8500EAD546 /* PSRankingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6CA818BC3F8500EAD546 /* PSRankingsViewController.m */; };
+		8EFD6CAB18BC3F8500EAD546 /* PSRankingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD6CA918BC3F8500EAD546 /* PSRankingsViewController.xib */; };
+		8EFD6CAF18BC3FB600EAD546 /* PSAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6CAD18BC3FB600EAD546 /* PSAccountViewController.m */; };
+		8EFD6CB018BC3FB600EAD546 /* PSAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD6CAE18BC3FB600EAD546 /* PSAccountViewController.xib */; };
+		8EFD6CB418BC3FD300EAD546 /* PSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6CB218BC3FD300EAD546 /* PSSettingsViewController.m */; };
+		8EFD6CB518BC3FD300EAD546 /* PSSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD6CB318BC3FD300EAD546 /* PSSettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +61,9 @@
 		3AA8B5BC18BC24C8006A0E88 /* PartyStoriesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PartyStoriesTests-Info.plist"; sourceTree = "<group>"; };
 		3AA8B5BE18BC24C8006A0E88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3AA8B5C018BC24C8006A0E88 /* PartyStoriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartyStoriesTests.m; sourceTree = "<group>"; };
-		8EB4FEA018BC27640022BF8E /* PSPartyGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPartyGalleryViewController.h; sourceTree = "<group>"; };
-		8EB4FEA118BC27640022BF8E /* PSPartyGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPartyGalleryViewController.m; sourceTree = "<group>"; };
-		8EB4FEA218BC27640022BF8E /* PSPartyGalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSPartyGalleryViewController.xib; sourceTree = "<group>"; };
+		8EB4FEA018BC27640022BF8E /* PSPartyGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSPartyGalleryViewController.h; path = PartyStories/PSPartyGalleryViewController.h; sourceTree = "<group>"; };
+		8EB4FEA118BC27640022BF8E /* PSPartyGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSPartyGalleryViewController.m; path = PartyStories/PSPartyGalleryViewController.m; sourceTree = "<group>"; };
+		8EB4FEA218BC27640022BF8E /* PSPartyGalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PSPartyGalleryViewController.xib; path = PartyStories/PSPartyGalleryViewController.xib; sourceTree = "<group>"; };
 		8EB4FEA718BC2F570022BF8E /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		8EB4FEA818BC2F570022BF8E /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		8EB4FEA918BC2F570022BF8E /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -65,6 +72,17 @@
 		8EB4FEAC18BC2F570022BF8E /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
 		8EFD6C9B18BC34D700EAD546 /* PSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMenuViewController.h; sourceTree = "<group>"; };
 		8EFD6C9C18BC34D700EAD546 /* PSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMenuViewController.m; sourceTree = "<group>"; };
+		8EFD6C9F18BC3DE900EAD546 /* PSMenuNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSMenuNavigationViewController.h; path = PartyStories/PSMenuNavigationViewController.h; sourceTree = "<group>"; };
+		8EFD6CA018BC3DE900EAD546 /* PSMenuNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSMenuNavigationViewController.m; path = PartyStories/PSMenuNavigationViewController.m; sourceTree = "<group>"; };
+		8EFD6CA718BC3F8500EAD546 /* PSRankingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSRankingsViewController.h; path = PartyStories/PSRankingsViewController.h; sourceTree = "<group>"; };
+		8EFD6CA818BC3F8500EAD546 /* PSRankingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSRankingsViewController.m; path = PartyStories/PSRankingsViewController.m; sourceTree = "<group>"; };
+		8EFD6CA918BC3F8500EAD546 /* PSRankingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PSRankingsViewController.xib; path = PartyStories/PSRankingsViewController.xib; sourceTree = "<group>"; };
+		8EFD6CAC18BC3FB600EAD546 /* PSAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSAccountViewController.h; path = PartyStories/PSAccountViewController.h; sourceTree = "<group>"; };
+		8EFD6CAD18BC3FB600EAD546 /* PSAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSAccountViewController.m; path = PartyStories/PSAccountViewController.m; sourceTree = "<group>"; };
+		8EFD6CAE18BC3FB600EAD546 /* PSAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PSAccountViewController.xib; path = PartyStories/PSAccountViewController.xib; sourceTree = "<group>"; };
+		8EFD6CB118BC3FD300EAD546 /* PSSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSSettingsViewController.h; path = PartyStories/PSSettingsViewController.h; sourceTree = "<group>"; };
+		8EFD6CB218BC3FD300EAD546 /* PSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSSettingsViewController.m; path = PartyStories/PSSettingsViewController.m; sourceTree = "<group>"; };
+		8EFD6CB318BC3FD300EAD546 /* PSSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PSSettingsViewController.xib; path = PartyStories/PSSettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +112,7 @@
 		3AA8B58F18BC24C8006A0E88 = {
 			isa = PBXGroup;
 			children = (
+				8EFD6C9E18BC3D7900EAD546 /* Controllers */,
 				3AA8B5A118BC24C8006A0E88 /* PartyStories */,
 				3AA8B5BA18BC24C8006A0E88 /* PartyStoriesTests */,
 				3AA8B59A18BC24C8006A0E88 /* Frameworks */,
@@ -129,9 +148,6 @@
 				8EFD6C9C18BC34D700EAD546 /* PSMenuViewController.m */,
 				3AA8B5AA18BC24C8006A0E88 /* PSAppDelegate.h */,
 				3AA8B5AB18BC24C8006A0E88 /* PSAppDelegate.m */,
-				8EB4FEA018BC27640022BF8E /* PSPartyGalleryViewController.h */,
-				8EB4FEA118BC27640022BF8E /* PSPartyGalleryViewController.m */,
-				8EB4FEA218BC27640022BF8E /* PSPartyGalleryViewController.xib */,
 				3AA8B5AD18BC24C8006A0E88 /* Images.xcassets */,
 				3AA8B5A218BC24C8006A0E88 /* Supporting Files */,
 			);
@@ -187,6 +203,27 @@
 			);
 			name = RESideMenu;
 			path = Libraries/RESideMenu/RESideMenu;
+			sourceTree = "<group>";
+		};
+		8EFD6C9E18BC3D7900EAD546 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8EFD6C9F18BC3DE900EAD546 /* PSMenuNavigationViewController.h */,
+				8EFD6CA018BC3DE900EAD546 /* PSMenuNavigationViewController.m */,
+				8EB4FEA018BC27640022BF8E /* PSPartyGalleryViewController.h */,
+				8EB4FEA118BC27640022BF8E /* PSPartyGalleryViewController.m */,
+				8EB4FEA218BC27640022BF8E /* PSPartyGalleryViewController.xib */,
+				8EFD6CA718BC3F8500EAD546 /* PSRankingsViewController.h */,
+				8EFD6CA818BC3F8500EAD546 /* PSRankingsViewController.m */,
+				8EFD6CA918BC3F8500EAD546 /* PSRankingsViewController.xib */,
+				8EFD6CAC18BC3FB600EAD546 /* PSAccountViewController.h */,
+				8EFD6CAD18BC3FB600EAD546 /* PSAccountViewController.m */,
+				8EFD6CAE18BC3FB600EAD546 /* PSAccountViewController.xib */,
+				8EFD6CB118BC3FD300EAD546 /* PSSettingsViewController.h */,
+				8EFD6CB218BC3FD300EAD546 /* PSSettingsViewController.m */,
+				8EFD6CB318BC3FD300EAD546 /* PSSettingsViewController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +302,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EFD6CB018BC3FB600EAD546 /* PSAccountViewController.xib in Resources */,
+				8EFD6CAB18BC3F8500EAD546 /* PSRankingsViewController.xib in Resources */,
+				8EFD6CB518BC3FD300EAD546 /* PSSettingsViewController.xib in Resources */,
 				3AA8B5A618BC24C8006A0E88 /* InfoPlist.strings in Resources */,
 				8EB4FEA418BC27640022BF8E /* PSPartyGalleryViewController.xib in Resources */,
 				3AA8B5AE18BC24C8006A0E88 /* Images.xcassets in Resources */,
@@ -290,9 +330,13 @@
 				3AA8B5A818BC24C8006A0E88 /* main.m in Sources */,
 				3AA8B5AC18BC24C8006A0E88 /* PSAppDelegate.m in Sources */,
 				8EFD6C9D18BC34D700EAD546 /* PSMenuViewController.m in Sources */,
+				8EFD6CA118BC3DE900EAD546 /* PSMenuNavigationViewController.m in Sources */,
+				8EFD6CB418BC3FD300EAD546 /* PSSettingsViewController.m in Sources */,
+				8EFD6CAA18BC3F8500EAD546 /* PSRankingsViewController.m in Sources */,
 				8EB4FEAE18BC2F570022BF8E /* RESideMenu.m in Sources */,
 				8EB4FEAD18BC2F570022BF8E /* RECommonFunctions.m in Sources */,
 				8EB4FEAF18BC2F570022BF8E /* UIViewController+RESideMenu.m in Sources */,
+				8EFD6CAF18BC3FB600EAD546 /* PSAccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,16 +10,14 @@
 #import "RESideMenu.h"
 
 @interface PSPartyGalleryViewController ()
-
 @end
 
 @implementation PSPartyGalleryViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-   if (self) {
-      // Custom initialization
+   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])
+   {
    }
    return self;
 }
@@ -28,22 +26,12 @@
 {
    [super viewDidLoad];
    // Do any additional setup after loading the view from its nib.
-
-   self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu"
-                                                                            style:UIBarButtonItemStylePlain
-                                                                           target:self
-                                                                           action:@selector(showMenu)];
 }
 
 - (void)didReceiveMemoryWarning
 {
    [super didReceiveMemoryWarning];
    // Dispose of any resources that can be recreated.
-}
-
-- (void)showMenu
-{
-   [self.sideMenuViewController presentMenuViewController];
 }
 
 @end
