@@ -8,6 +8,8 @@
 
 #import "PSAppDelegate.h"
 #import "PSPartyGalleryViewController.h"
+#import "PSMenuViewController.h"
+#import "RESideMenu.h"
 
 @implementation PSAppDelegate
 
@@ -15,10 +17,17 @@
 {
    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-   PSPartyGalleryViewController *rootViewController =
-      [[PSPartyGalleryViewController alloc] initWithNibName:@"PSPartyGalleryViewController" bundle:nil];
+   UINavigationController *navigationController =
+      [[UINavigationController alloc] initWithRootViewController:[[PSPartyGalleryViewController alloc] init]];
 
-   self.window.rootViewController = rootViewController;
+   PSMenuViewController *menuViewController = [[PSMenuViewController alloc] init];
+
+   RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
+                                                                       menuViewController:menuViewController];
+
+   sideMenuViewController.backgroundImage = [UIImage imageNamed:@"Stars"];
+   self.window.rootViewController = sideMenuViewController;
+
    [self.window makeKeyAndVisible];
    return YES;
 }

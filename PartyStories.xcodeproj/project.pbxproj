@@ -24,6 +24,7 @@
 		8EB4FEAD18BC2F570022BF8E /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4FEA818BC2F570022BF8E /* RECommonFunctions.m */; };
 		8EB4FEAE18BC2F570022BF8E /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4FEAA18BC2F570022BF8E /* RESideMenu.m */; };
 		8EB4FEAF18BC2F570022BF8E /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4FEAC18BC2F570022BF8E /* UIViewController+RESideMenu.m */; };
+		8EFD6C9D18BC34D700EAD546 /* PSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6C9C18BC34D700EAD546 /* PSMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		8EB4FEAA18BC2F570022BF8E /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
 		8EB4FEAB18BC2F570022BF8E /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
 		8EB4FEAC18BC2F570022BF8E /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		8EFD6C9B18BC34D700EAD546 /* PSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMenuViewController.h; sourceTree = "<group>"; };
+		8EFD6C9C18BC34D700EAD546 /* PSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 		3AA8B5A118BC24C8006A0E88 /* PartyStories */ = {
 			isa = PBXGroup;
 			children = (
+				8EFD6C9B18BC34D700EAD546 /* PSMenuViewController.h */,
+				8EFD6C9C18BC34D700EAD546 /* PSMenuViewController.m */,
 				3AA8B5AA18BC24C8006A0E88 /* PSAppDelegate.h */,
 				3AA8B5AB18BC24C8006A0E88 /* PSAppDelegate.m */,
 				8EB4FEA018BC27640022BF8E /* PSPartyGalleryViewController.h */,
@@ -284,6 +289,7 @@
 				8EB4FEA318BC27640022BF8E /* PSPartyGalleryViewController.m in Sources */,
 				3AA8B5A818BC24C8006A0E88 /* main.m in Sources */,
 				3AA8B5AC18BC24C8006A0E88 /* PSAppDelegate.m in Sources */,
+				8EFD6C9D18BC34D700EAD546 /* PSMenuViewController.m in Sources */,
 				8EB4FEAE18BC2F570022BF8E /* RESideMenu.m in Sources */,
 				8EB4FEAD18BC2F570022BF8E /* RECommonFunctions.m in Sources */,
 				8EB4FEAF18BC2F570022BF8E /* UIViewController+RESideMenu.m in Sources */,
