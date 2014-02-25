@@ -27,10 +27,9 @@
 {
    [super viewDidLoad];
    self.tableView = ({
-      UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,
-                                                                             (self.view.frame.size.height - 54 * 5) * .5f,
-                                                                             self.view.frame.size.width,
-                                                                             54 * 5)
+      CGRect tableFrame = CGRectMake(0, (self.view.frame.size.height - 54 * 5) * .5f,
+                                     self.view.frame.size.width, 54 * 5);
+      UITableView *tableView = [[UITableView alloc] initWithFrame:tableFrame
                                                             style:UITableViewStylePlain];
 
       tableView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin |
@@ -52,7 +51,7 @@
    [self.view addSubview:self.tableView];
 }
 
-#pragma mark Helper Methods
+#pragma mark - Helper Methods
 - (void)setupPSViewControllers
 {
    self.psViewControllers = @[[[PSPartyGalleryViewController alloc] init],
@@ -61,8 +60,7 @@
                               [[PSSettingsViewController alloc] init]];
 }
 
-#pragma mark -
-#pragma mark UITableView Delegate
+#pragma mark - UITableView Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
    [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -79,9 +77,7 @@
 //   }
 }
 
-#pragma mark -
-#pragma mark UITableView Datasource
-
+#pragma mark - UITableView Datasource
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
    return 54;
@@ -94,7 +90,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-   return self.psViewControllers.count;
+   return [self.psViewControllers count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
