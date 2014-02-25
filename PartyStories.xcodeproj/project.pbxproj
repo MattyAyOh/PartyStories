@@ -19,6 +19,8 @@
 		3AA8B5B718BC24C8006A0E88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA8B59F18BC24C8006A0E88 /* UIKit.framework */; };
 		3AA8B5BF18BC24C8006A0E88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8B5BD18BC24C8006A0E88 /* InfoPlist.strings */; };
 		3AA8B5C118BC24C8006A0E88 /* PartyStoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5C018BC24C8006A0E88 /* PartyStoriesTests.m */; };
+		8EB4FEA318BC27640022BF8E /* PSPartyGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4FEA118BC27640022BF8E /* PSPartyGalleryViewController.m */; };
+		8EB4FEA418BC27640022BF8E /* PSPartyGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB4FEA218BC27640022BF8E /* PSPartyGalleryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		3AA8B5BC18BC24C8006A0E88 /* PartyStoriesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PartyStoriesTests-Info.plist"; sourceTree = "<group>"; };
 		3AA8B5BE18BC24C8006A0E88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3AA8B5C018BC24C8006A0E88 /* PartyStoriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartyStoriesTests.m; sourceTree = "<group>"; };
+		8EB4FEA018BC27640022BF8E /* PSPartyGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPartyGalleryViewController.h; sourceTree = "<group>"; };
+		8EB4FEA118BC27640022BF8E /* PSPartyGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPartyGalleryViewController.m; sourceTree = "<group>"; };
+		8EB4FEA218BC27640022BF8E /* PSPartyGalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSPartyGalleryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,9 @@
 			children = (
 				3AA8B5AA18BC24C8006A0E88 /* PSAppDelegate.h */,
 				3AA8B5AB18BC24C8006A0E88 /* PSAppDelegate.m */,
+				8EB4FEA018BC27640022BF8E /* PSPartyGalleryViewController.h */,
+				8EB4FEA118BC27640022BF8E /* PSPartyGalleryViewController.m */,
+				8EB4FEA218BC27640022BF8E /* PSPartyGalleryViewController.xib */,
 				3AA8B5AD18BC24C8006A0E88 /* Images.xcassets */,
 				3AA8B5A218BC24C8006A0E88 /* Supporting Files */,
 			);
@@ -221,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AA8B5A618BC24C8006A0E88 /* InfoPlist.strings in Resources */,
+				8EB4FEA418BC27640022BF8E /* PSPartyGalleryViewController.xib in Resources */,
 				3AA8B5AE18BC24C8006A0E88 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB4FEA318BC27640022BF8E /* PSPartyGalleryViewController.m in Sources */,
 				3AA8B5A818BC24C8006A0E88 /* main.m in Sources */,
 				3AA8B5AC18BC24C8006A0E88 /* PSAppDelegate.m in Sources */,
 			);
@@ -442,6 +452,7 @@
 				3AA8B5C618BC24C8006A0E88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AA8B5C718BC24C8006A0E88 /* Build configuration list for PBXNativeTarget "PartyStoriesTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +461,7 @@
 				3AA8B5C918BC24C8006A0E88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
