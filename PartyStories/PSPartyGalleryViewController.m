@@ -8,6 +8,7 @@
 
 #import "PSPartyGalleryViewController.h"
 #import "RESideMenu.h"
+#import <Parse/Parse.h>
 
 @interface PSPartyGalleryViewController ()
 
@@ -28,6 +29,10 @@
 {
    [super viewDidLoad];
    // Do any additional setup after loading the view from its nib.
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    testObject[@"foo"] = @"bar";
+    [testObject saveInBackground];
+    
 
    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu"
                                                                             style:UIBarButtonItemStylePlain

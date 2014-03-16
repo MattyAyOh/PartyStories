@@ -10,11 +10,21 @@
 #import "PSPartyGalleryViewController.h"
 #import "PSMenuViewController.h"
 #import "RESideMenu.h"
+#import <Parse/Parse.h>
 
 @implementation PSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"zBbddIJezYaCgfhXWy59qJJb01AIB0IjCYJlmKB3"
+                  clientKey:@"zWbnpQVICqqHYg8w3kJVh5Sk8TPLcQmfBMSY73Ao"];
+    
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+     UIRemoteNotificationTypeAlert|
+     UIRemoteNotificationTypeSound];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
    UINavigationController *navigationController =
@@ -31,6 +41,21 @@
    [self.window makeKeyAndVisible];
    return YES;
 }
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
