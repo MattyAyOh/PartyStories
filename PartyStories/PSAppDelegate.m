@@ -53,6 +53,32 @@
                   clientKey:@"zWbnpQVICqqHYg8w3kJVh5Sk8TPLcQmfBMSY73Ao"];
     // ****************************************************************************
     
+    // Wipe out old user defaults
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"objectIDArray"]){
+        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"objectIDArray"];
+    }
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    // Simple way to create a user or log in the existing user
+    // For your app, you will probably want to present your own login screen
+    PFUser *currentUser = [PFUser currentUser];
+    
+    if (!currentUser) {
+        // Dummy username and password
+        PFUser *user = [PFUser user];
+        user.username = @"Matt";
+        user.password = @"password";
+        user.email = @"Matt@example.com";
+        
+        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (error) {
+                // Assume the error is because the user already existed.
+                [PFUser logInWithUsername:@"Matt" password:@"password"];
+            }
+        }];
+    }
+
+    
     // Track app open.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
@@ -72,19 +98,19 @@
     // Use Reachability to monitor connectivity
     [self monitorReachability];
     
-    self.welcomeViewController = [[PSWelcomeViewController alloc] init];
+//    self.welcomeViewController = [[PSWelcomeViewController alloc] init];
+//    
+//    self.navController = [[UINavigationController alloc] initWithRootViewController:self.welcomeViewController];
+//    self.navController.navigationBarHidden = YES;
+//    
+//    self.window.rootViewController = self.navController;
+//    [self.window makeKeyAndVisible];
+//    
+//    [self handlePush:launchOptions];
+//    
+//    return YES;
     
-    self.navController = [[UINavigationController alloc] initWithRootViewController:self.welcomeViewController];
-    self.navController.navigationBarHidden = YES;
     
-    self.window.rootViewController = self.navController;
-    [self.window makeKeyAndVisible];
-    
-    [self handlePush:launchOptions];
-    
-    return YES;
-    
-    /*
      
      self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
      
@@ -102,8 +128,7 @@
      
      [self.window makeKeyAndVisible];
      return YES;
-
-     */
+     
 }
 
 //- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
