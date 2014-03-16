@@ -17,6 +17,38 @@
 		3A75D34518D60B4300503F30 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A75D34418D60B4300503F30 /* Security.framework */; };
 		3A75D34718D60B4900503F30 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A75D34618D60B4900503F30 /* StoreKit.framework */; };
 		3A75D34918D60B4F00503F30 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A75D34818D60B4F00503F30 /* SystemConfiguration.framework */; };
+		3A80EA9318D61B030023A9C7 /* PSEditPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EA9218D61B030023A9C7 /* PSEditPhotoViewController.m */; };
+		3A80EAC918D61B980023A9C7 /* PSPhotoDetailsFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAC618D61B980023A9C7 /* PSPhotoDetailsFooterView.m */; };
+		3A80EACA18D61B980023A9C7 /* PSPhotoDetailsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAC818D61B980023A9C7 /* PSPhotoDetailsHeaderView.m */; };
+		3A80EACD18D61C380023A9C7 /* PSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EACC18D61C380023A9C7 /* PSUtility.m */; };
+		3A80EAD518D61C7B0023A9C7 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAD018D61C7B0023A9C7 /* UIImage+AlphaAdditions.m */; };
+		3A80EAD618D61C7B0023A9C7 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAD218D61C7B0023A9C7 /* UIImage+ResizeAdditions.m */; };
+		3A80EAD718D61C7B0023A9C7 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAD418D61C7B0023A9C7 /* UIImage+RoundedCornerAdditions.m */; };
+		3A80EAE218D61EA10023A9C7 /* PSPhotoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAE118D61EA10023A9C7 /* PSPhotoHeaderView.m */; };
+		3A80EAE718D620920023A9C7 /* PSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAE418D620920023A9C7 /* PSCache.m */; };
+		3A80EAE818D620920023A9C7 /* PSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAE618D620920023A9C7 /* PSConstants.m */; };
+		3A80EAEB18D6234D0023A9C7 /* PSProfileImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAEA18D6234D0023A9C7 /* PSProfileImageView.m */; };
+		3A80EAEF18D624080023A9C7 /* TTTTimeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAEE18D624080023A9C7 /* TTTTimeIntervalFormatter.m */; };
+		3A80EAF318D626650023A9C7 /* PSPhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAF218D626650023A9C7 /* PSPhotoDetailsViewController.m */; };
+		3A80EAFA18D627210023A9C7 /* PSActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAF518D627210023A9C7 /* PSActivityCell.m */; };
+		3A80EAFB18D627210023A9C7 /* PSBaseTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAF718D627210023A9C7 /* PSBaseTextCell.m */; };
+		3A80EAFC18D627210023A9C7 /* PSFindFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAF918D627210023A9C7 /* PSFindFriendsCell.m */; };
+		3A80EB0118D628A70023A9C7 /* PSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EAFE18D628A70023A9C7 /* PSImageView.m */; };
+		3A80EB0218D628A70023A9C7 /* PSLoadMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB0018D628A70023A9C7 /* PSLoadMoreCell.m */; };
+		3A80EB0518D628C70023A9C7 /* PSPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB0418D628C70023A9C7 /* PSPhotoCell.m */; };
+		3A80EB0E18D628D10023A9C7 /* PSSettingsButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB0B18D628D10023A9C7 /* PSSettingsButtonItem.m */; };
+		3A80EB1418D629660023A9C7 /* PSLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB1118D629660023A9C7 /* PSLogInViewController.m */; };
+		3A80EB1518D629660023A9C7 /* PSWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB1318D629660023A9C7 /* PSWelcomeViewController.m */; };
+		3A80EB1D18D62BD90023A9C7 /* PSAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB1818D62BD90023A9C7 /* PSAccountViewController.m */; };
+		3A80EB1E18D62BD90023A9C7 /* PSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB1A18D62BD90023A9C7 /* PSHomeViewController.m */; };
+		3A80EB1F18D62BD90023A9C7 /* PSPhotoTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB1C18D62BD90023A9C7 /* PSPhotoTimelineViewController.m */; };
+		3A80EB2318D62C4D0023A9C7 /* PSActivityFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB2218D62C4D0023A9C7 /* PSActivityFeedViewController.m */; };
+		3A80EB2918D62C870023A9C7 /* PSFindFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB2618D62C870023A9C7 /* PSFindFriendsViewController.m */; };
+		3A80EB2A18D62C870023A9C7 /* PSSettingsActionSheetDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB2818D62C870023A9C7 /* PSSettingsActionSheetDelegate.m */; };
+		3A80EB2E18D62C980023A9C7 /* PSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB2D18D62C980023A9C7 /* PSTabBarController.m */; };
+		3A80EB3818D62E720023A9C7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB3118D62E720023A9C7 /* MBProgressHUD.m */; };
+		3A80EB3918D62E720023A9C7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB3418D62E720023A9C7 /* Reachability.m */; };
+		3A80EB3A18D62E720023A9C7 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EB3718D62E720023A9C7 /* UIImage+ImageEffects.m */; };
 		3AA8B59C18BC24C8006A0E88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA8B59B18BC24C8006A0E88 /* Foundation.framework */; };
 		3AA8B59E18BC24C8006A0E88 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA8B59D18BC24C8006A0E88 /* CoreGraphics.framework */; };
 		3AA8B5A018BC24C8006A0E88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA8B59F18BC24C8006A0E88 /* UIKit.framework */; };
@@ -38,7 +70,6 @@
 		8EFD6CA118BC3DE900EAD546 /* PSMenuNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6CA018BC3DE900EAD546 /* PSMenuNavigationViewController.m */; };
 		8EFD6CAA18BC3F8500EAD546 /* PSRankingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6CA818BC3F8500EAD546 /* PSRankingsViewController.m */; };
 		8EFD6CAB18BC3F8500EAD546 /* PSRankingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD6CA918BC3F8500EAD546 /* PSRankingsViewController.xib */; };
-		8EFD6CAF18BC3FB600EAD546 /* PSAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6CAD18BC3FB600EAD546 /* PSAccountViewController.m */; };
 		8EFD6CB018BC3FB600EAD546 /* PSAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD6CAE18BC3FB600EAD546 /* PSAccountViewController.xib */; };
 		8EFD6CB418BC3FD300EAD546 /* PSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6CB218BC3FD300EAD546 /* PSSettingsViewController.m */; };
 		8EFD6CB518BC3FD300EAD546 /* PSSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD6CB318BC3FD300EAD546 /* PSSettingsViewController.xib */; };
@@ -65,6 +96,70 @@
 		3A75D34418D60B4300503F30 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3A75D34618D60B4900503F30 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3A75D34818D60B4F00503F30 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3A80EA9118D61B030023A9C7 /* PSEditPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSEditPhotoViewController.h; path = PartyStories/PSEditPhotoViewController.h; sourceTree = "<group>"; };
+		3A80EA9218D61B030023A9C7 /* PSEditPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSEditPhotoViewController.m; path = PartyStories/PSEditPhotoViewController.m; sourceTree = "<group>"; };
+		3A80EAC518D61B980023A9C7 /* PSPhotoDetailsFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSPhotoDetailsFooterView.h; path = PartyStories/PSPhotoDetailsFooterView.h; sourceTree = "<group>"; };
+		3A80EAC618D61B980023A9C7 /* PSPhotoDetailsFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSPhotoDetailsFooterView.m; path = PartyStories/PSPhotoDetailsFooterView.m; sourceTree = "<group>"; };
+		3A80EAC718D61B980023A9C7 /* PSPhotoDetailsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSPhotoDetailsHeaderView.h; path = PartyStories/PSPhotoDetailsHeaderView.h; sourceTree = "<group>"; };
+		3A80EAC818D61B980023A9C7 /* PSPhotoDetailsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSPhotoDetailsHeaderView.m; path = PartyStories/PSPhotoDetailsHeaderView.m; sourceTree = "<group>"; };
+		3A80EACB18D61C380023A9C7 /* PSUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSUtility.h; sourceTree = "<group>"; };
+		3A80EACC18D61C380023A9C7 /* PSUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSUtility.m; sourceTree = "<group>"; };
+		3A80EACF18D61C7B0023A9C7 /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+AlphaAdditions.h"; path = "PartyStories/UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
+		3A80EAD018D61C7B0023A9C7 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+AlphaAdditions.m"; path = "PartyStories/UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
+		3A80EAD118D61C7B0023A9C7 /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ResizeAdditions.h"; path = "PartyStories/UIImage+ResizeAdditions.h"; sourceTree = "<group>"; };
+		3A80EAD218D61C7B0023A9C7 /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ResizeAdditions.m"; path = "PartyStories/UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
+		3A80EAD318D61C7B0023A9C7 /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+RoundedCornerAdditions.h"; path = "PartyStories/UIImage+RoundedCornerAdditions.h"; sourceTree = "<group>"; };
+		3A80EAD418D61C7B0023A9C7 /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RoundedCornerAdditions.m"; path = "PartyStories/UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
+		3A80EAE018D61EA10023A9C7 /* PSPhotoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSPhotoHeaderView.h; path = PartyStories/PSPhotoHeaderView.h; sourceTree = "<group>"; };
+		3A80EAE118D61EA10023A9C7 /* PSPhotoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSPhotoHeaderView.m; path = PartyStories/PSPhotoHeaderView.m; sourceTree = "<group>"; };
+		3A80EAE318D620920023A9C7 /* PSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCache.h; sourceTree = "<group>"; };
+		3A80EAE418D620920023A9C7 /* PSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCache.m; sourceTree = "<group>"; };
+		3A80EAE518D620920023A9C7 /* PSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSConstants.h; sourceTree = "<group>"; };
+		3A80EAE618D620920023A9C7 /* PSConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSConstants.m; sourceTree = "<group>"; };
+		3A80EAE918D6234D0023A9C7 /* PSProfileImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSProfileImageView.h; path = PartyStories/PSProfileImageView.h; sourceTree = "<group>"; };
+		3A80EAEA18D6234D0023A9C7 /* PSProfileImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSProfileImageView.m; path = PartyStories/PSProfileImageView.m; sourceTree = "<group>"; };
+		3A80EAED18D624080023A9C7 /* TTTTimeIntervalFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTTimeIntervalFormatter.h; sourceTree = "<group>"; };
+		3A80EAEE18D624080023A9C7 /* TTTTimeIntervalFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTTimeIntervalFormatter.m; sourceTree = "<group>"; };
+		3A80EAF118D626650023A9C7 /* PSPhotoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSPhotoDetailsViewController.h; path = PartyStories/PSPhotoDetailsViewController.h; sourceTree = "<group>"; };
+		3A80EAF218D626650023A9C7 /* PSPhotoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSPhotoDetailsViewController.m; path = PartyStories/PSPhotoDetailsViewController.m; sourceTree = "<group>"; };
+		3A80EAF418D627210023A9C7 /* PSActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSActivityCell.h; path = PartyStories/PSActivityCell.h; sourceTree = "<group>"; };
+		3A80EAF518D627210023A9C7 /* PSActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSActivityCell.m; path = PartyStories/PSActivityCell.m; sourceTree = "<group>"; };
+		3A80EAF618D627210023A9C7 /* PSBaseTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSBaseTextCell.h; path = PartyStories/PSBaseTextCell.h; sourceTree = "<group>"; };
+		3A80EAF718D627210023A9C7 /* PSBaseTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSBaseTextCell.m; path = PartyStories/PSBaseTextCell.m; sourceTree = "<group>"; };
+		3A80EAF818D627210023A9C7 /* PSFindFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSFindFriendsCell.h; path = PartyStories/PSFindFriendsCell.h; sourceTree = "<group>"; };
+		3A80EAF918D627210023A9C7 /* PSFindFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSFindFriendsCell.m; path = PartyStories/PSFindFriendsCell.m; sourceTree = "<group>"; };
+		3A80EAFD18D628A70023A9C7 /* PSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSImageView.h; path = PartyStories/PSImageView.h; sourceTree = "<group>"; };
+		3A80EAFE18D628A70023A9C7 /* PSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSImageView.m; path = PartyStories/PSImageView.m; sourceTree = "<group>"; };
+		3A80EAFF18D628A70023A9C7 /* PSLoadMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSLoadMoreCell.h; path = PartyStories/PSLoadMoreCell.h; sourceTree = "<group>"; };
+		3A80EB0018D628A70023A9C7 /* PSLoadMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSLoadMoreCell.m; path = PartyStories/PSLoadMoreCell.m; sourceTree = "<group>"; };
+		3A80EB0318D628C70023A9C7 /* PSPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSPhotoCell.h; path = PartyStories/PSPhotoCell.h; sourceTree = "<group>"; };
+		3A80EB0418D628C70023A9C7 /* PSPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSPhotoCell.m; path = PartyStories/PSPhotoCell.m; sourceTree = "<group>"; };
+		3A80EB0A18D628D10023A9C7 /* PSSettingsButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSSettingsButtonItem.h; path = PartyStories/PSSettingsButtonItem.h; sourceTree = "<group>"; };
+		3A80EB0B18D628D10023A9C7 /* PSSettingsButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSSettingsButtonItem.m; path = PartyStories/PSSettingsButtonItem.m; sourceTree = "<group>"; };
+		3A80EB1018D629660023A9C7 /* PSLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSLogInViewController.h; path = PartyStories/PSLogInViewController.h; sourceTree = "<group>"; };
+		3A80EB1118D629660023A9C7 /* PSLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSLogInViewController.m; path = PartyStories/PSLogInViewController.m; sourceTree = "<group>"; };
+		3A80EB1218D629660023A9C7 /* PSWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSWelcomeViewController.h; path = PartyStories/PSWelcomeViewController.h; sourceTree = "<group>"; };
+		3A80EB1318D629660023A9C7 /* PSWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSWelcomeViewController.m; path = PartyStories/PSWelcomeViewController.m; sourceTree = "<group>"; };
+		3A80EB1718D62BD90023A9C7 /* PSAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSAccountViewController.h; path = PartyStories/PSAccountViewController.h; sourceTree = "<group>"; };
+		3A80EB1818D62BD90023A9C7 /* PSAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSAccountViewController.m; path = PartyStories/PSAccountViewController.m; sourceTree = "<group>"; };
+		3A80EB1918D62BD90023A9C7 /* PSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSHomeViewController.h; path = PartyStories/PSHomeViewController.h; sourceTree = "<group>"; };
+		3A80EB1A18D62BD90023A9C7 /* PSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSHomeViewController.m; path = PartyStories/PSHomeViewController.m; sourceTree = "<group>"; };
+		3A80EB1B18D62BD90023A9C7 /* PSPhotoTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSPhotoTimelineViewController.h; path = PartyStories/PSPhotoTimelineViewController.h; sourceTree = "<group>"; };
+		3A80EB1C18D62BD90023A9C7 /* PSPhotoTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSPhotoTimelineViewController.m; path = PartyStories/PSPhotoTimelineViewController.m; sourceTree = "<group>"; };
+		3A80EB2118D62C4D0023A9C7 /* PSActivityFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSActivityFeedViewController.h; path = PartyStories/PSActivityFeedViewController.h; sourceTree = "<group>"; };
+		3A80EB2218D62C4D0023A9C7 /* PSActivityFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSActivityFeedViewController.m; path = PartyStories/PSActivityFeedViewController.m; sourceTree = "<group>"; };
+		3A80EB2518D62C870023A9C7 /* PSFindFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSFindFriendsViewController.h; path = PartyStories/PSFindFriendsViewController.h; sourceTree = "<group>"; };
+		3A80EB2618D62C870023A9C7 /* PSFindFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSFindFriendsViewController.m; path = PartyStories/PSFindFriendsViewController.m; sourceTree = "<group>"; };
+		3A80EB2718D62C870023A9C7 /* PSSettingsActionSheetDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSSettingsActionSheetDelegate.h; path = PartyStories/PSSettingsActionSheetDelegate.h; sourceTree = "<group>"; };
+		3A80EB2818D62C870023A9C7 /* PSSettingsActionSheetDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSSettingsActionSheetDelegate.m; path = PartyStories/PSSettingsActionSheetDelegate.m; sourceTree = "<group>"; };
+		3A80EB2C18D62C980023A9C7 /* PSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTabBarController.h; path = PartyStories/PSTabBarController.h; sourceTree = "<group>"; };
+		3A80EB2D18D62C980023A9C7 /* PSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSTabBarController.m; path = PartyStories/PSTabBarController.m; sourceTree = "<group>"; };
+		3A80EB3018D62E720023A9C7 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		3A80EB3118D62E720023A9C7 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3A80EB3318D62E720023A9C7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3A80EB3418D62E720023A9C7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3A80EB3618D62E720023A9C7 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		3A80EB3718D62E720023A9C7 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		3AA8B59818BC24C8006A0E88 /* PartyStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA8B59B18BC24C8006A0E88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3AA8B59D18BC24C8006A0E88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,15 +185,13 @@
 		8EB4FEAA18BC2F570022BF8E /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
 		8EB4FEAB18BC2F570022BF8E /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
 		8EB4FEAC18BC2F570022BF8E /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
-		8EFD6C9B18BC34D700EAD546 /* PSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMenuViewController.h; sourceTree = "<group>"; };
-		8EFD6C9C18BC34D700EAD546 /* PSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMenuViewController.m; sourceTree = "<group>"; };
+		8EFD6C9B18BC34D700EAD546 /* PSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSMenuViewController.h; path = PartyStories/PSMenuViewController.h; sourceTree = "<group>"; };
+		8EFD6C9C18BC34D700EAD546 /* PSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSMenuViewController.m; path = PartyStories/PSMenuViewController.m; sourceTree = "<group>"; };
 		8EFD6C9F18BC3DE900EAD546 /* PSMenuNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSMenuNavigationViewController.h; path = PartyStories/PSMenuNavigationViewController.h; sourceTree = "<group>"; };
 		8EFD6CA018BC3DE900EAD546 /* PSMenuNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSMenuNavigationViewController.m; path = PartyStories/PSMenuNavigationViewController.m; sourceTree = "<group>"; };
 		8EFD6CA718BC3F8500EAD546 /* PSRankingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSRankingsViewController.h; path = PartyStories/PSRankingsViewController.h; sourceTree = "<group>"; };
 		8EFD6CA818BC3F8500EAD546 /* PSRankingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSRankingsViewController.m; path = PartyStories/PSRankingsViewController.m; sourceTree = "<group>"; };
 		8EFD6CA918BC3F8500EAD546 /* PSRankingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PSRankingsViewController.xib; path = PartyStories/PSRankingsViewController.xib; sourceTree = "<group>"; };
-		8EFD6CAC18BC3FB600EAD546 /* PSAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSAccountViewController.h; path = PartyStories/PSAccountViewController.h; sourceTree = "<group>"; };
-		8EFD6CAD18BC3FB600EAD546 /* PSAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSAccountViewController.m; path = PartyStories/PSAccountViewController.m; sourceTree = "<group>"; };
 		8EFD6CAE18BC3FB600EAD546 /* PSAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PSAccountViewController.xib; path = PartyStories/PSAccountViewController.xib; sourceTree = "<group>"; };
 		8EFD6CB118BC3FD300EAD546 /* PSSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSSettingsViewController.h; path = PartyStories/PSSettingsViewController.h; sourceTree = "<group>"; };
 		8EFD6CB218BC3FD300EAD546 /* PSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSSettingsViewController.m; path = PartyStories/PSSettingsViewController.m; sourceTree = "<group>"; };
@@ -116,12 +209,12 @@
 				3A75D34318D60B3B00503F30 /* QuartzCore.framework in Frameworks */,
 				3A75D34118D60B3300503F30 /* MobileCoreServices.framework in Frameworks */,
 				3A75D33F18D60B2800503F30 /* libz.dylib in Frameworks */,
+				3A75D33718D60AC000503F30 /* Parse.framework in Frameworks */,
 				3A75D33D18D60B1A00503F30 /* CoreLocation.framework in Frameworks */,
 				3AA8B59E18BC24C8006A0E88 /* CoreGraphics.framework in Frameworks */,
 				3A75D33B18D60B0F00503F30 /* CFNetwork.framework in Frameworks */,
 				3A75D33918D60B0700503F30 /* AudioToolbox.framework in Frameworks */,
 				3AA8B5A018BC24C8006A0E88 /* UIKit.framework in Frameworks */,
-				3A75D33718D60AC000503F30 /* Parse.framework in Frameworks */,
 				3AA8B59C18BC24C8006A0E88 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,9 +232,214 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A80EACE18D61C6F0023A9C7 /* Catagories */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EACF18D61C7B0023A9C7 /* UIImage+AlphaAdditions.h */,
+				3A80EAD018D61C7B0023A9C7 /* UIImage+AlphaAdditions.m */,
+				3A80EAD118D61C7B0023A9C7 /* UIImage+ResizeAdditions.h */,
+				3A80EAD218D61C7B0023A9C7 /* UIImage+ResizeAdditions.m */,
+				3A80EAD318D61C7B0023A9C7 /* UIImage+RoundedCornerAdditions.h */,
+				3A80EAD418D61C7B0023A9C7 /* UIImage+RoundedCornerAdditions.m */,
+			);
+			name = Catagories;
+			sourceTree = "<group>";
+		};
+		3A80EAD818D61D5E0023A9C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EB0A18D628D10023A9C7 /* PSSettingsButtonItem.h */,
+				3A80EB0B18D628D10023A9C7 /* PSSettingsButtonItem.m */,
+				3A80EAFD18D628A70023A9C7 /* PSImageView.h */,
+				3A80EAFE18D628A70023A9C7 /* PSImageView.m */,
+				3A80EAE918D6234D0023A9C7 /* PSProfileImageView.h */,
+				3A80EAEA18D6234D0023A9C7 /* PSProfileImageView.m */,
+				3A80EAD918D61D690023A9C7 /* GalleryViews */,
+				3A80EADA18D61D740023A9C7 /* PhotoDetailViews */,
+				3A80EADB18D61D840023A9C7 /* UITableViewCells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3A80EAD918D61D690023A9C7 /* GalleryViews */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EAE018D61EA10023A9C7 /* PSPhotoHeaderView.h */,
+				3A80EAE118D61EA10023A9C7 /* PSPhotoHeaderView.m */,
+			);
+			name = GalleryViews;
+			sourceTree = "<group>";
+		};
+		3A80EADA18D61D740023A9C7 /* PhotoDetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EAC518D61B980023A9C7 /* PSPhotoDetailsFooterView.h */,
+				3A80EAC618D61B980023A9C7 /* PSPhotoDetailsFooterView.m */,
+				3A80EAC718D61B980023A9C7 /* PSPhotoDetailsHeaderView.h */,
+				3A80EAC818D61B980023A9C7 /* PSPhotoDetailsHeaderView.m */,
+			);
+			name = PhotoDetailViews;
+			sourceTree = "<group>";
+		};
+		3A80EADB18D61D840023A9C7 /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EB0318D628C70023A9C7 /* PSPhotoCell.h */,
+				3A80EB0418D628C70023A9C7 /* PSPhotoCell.m */,
+				3A80EAFF18D628A70023A9C7 /* PSLoadMoreCell.h */,
+				3A80EB0018D628A70023A9C7 /* PSLoadMoreCell.m */,
+				3A80EADC18D61D960023A9C7 /* PSBaseTextCell */,
+			);
+			name = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		3A80EADC18D61D960023A9C7 /* PSBaseTextCell */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EAF418D627210023A9C7 /* PSActivityCell.h */,
+				3A80EAF518D627210023A9C7 /* PSActivityCell.m */,
+				3A80EAF618D627210023A9C7 /* PSBaseTextCell.h */,
+				3A80EAF718D627210023A9C7 /* PSBaseTextCell.m */,
+				3A80EAF818D627210023A9C7 /* PSFindFriendsCell.h */,
+				3A80EAF918D627210023A9C7 /* PSFindFriendsCell.m */,
+			);
+			name = PSBaseTextCell;
+			sourceTree = "<group>";
+		};
+		3A80EADD18D61DF30023A9C7 /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EA9118D61B030023A9C7 /* PSEditPhotoViewController.h */,
+				3A80EA9218D61B030023A9C7 /* PSEditPhotoViewController.m */,
+			);
+			name = TakePhoto;
+			sourceTree = "<group>";
+		};
+		3A80EADE18D61E060023A9C7 /* MenuNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				8EFD6C9F18BC3DE900EAD546 /* PSMenuNavigationViewController.h */,
+				8EFD6CA018BC3DE900EAD546 /* PSMenuNavigationViewController.m */,
+			);
+			name = MenuNavigation;
+			sourceTree = "<group>";
+		};
+		3A80EADF18D61E350023A9C7 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				8EFD6C9B18BC34D700EAD546 /* PSMenuViewController.h */,
+				8EFD6C9C18BC34D700EAD546 /* PSMenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		3A80EAEC18D624080023A9C7 /* TTTTimeIntervalFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EAED18D624080023A9C7 /* TTTTimeIntervalFormatter.h */,
+				3A80EAEE18D624080023A9C7 /* TTTTimeIntervalFormatter.m */,
+			);
+			name = TTTTimeIntervalFormatter;
+			path = Libraries/TTTTimeIntervalFormatter;
+			sourceTree = "<group>";
+		};
+		3A80EAF018D626370023A9C7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EAF118D626650023A9C7 /* PSPhotoDetailsViewController.h */,
+				3A80EAF218D626650023A9C7 /* PSPhotoDetailsViewController.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		3A80EB0F18D629510023A9C7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EB1018D629660023A9C7 /* PSLogInViewController.h */,
+				3A80EB1118D629660023A9C7 /* PSLogInViewController.m */,
+				3A80EB1218D629660023A9C7 /* PSWelcomeViewController.h */,
+				3A80EB1318D629660023A9C7 /* PSWelcomeViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		3A80EB1618D62B5F0023A9C7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EB1718D62BD90023A9C7 /* PSAccountViewController.h */,
+				3A80EB1818D62BD90023A9C7 /* PSAccountViewController.m */,
+				3A80EB1918D62BD90023A9C7 /* PSHomeViewController.h */,
+				3A80EB1A18D62BD90023A9C7 /* PSHomeViewController.m */,
+				3A80EB1B18D62BD90023A9C7 /* PSPhotoTimelineViewController.h */,
+				3A80EB1C18D62BD90023A9C7 /* PSPhotoTimelineViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		3A80EB2018D62C3F0023A9C7 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EB2118D62C4D0023A9C7 /* PSActivityFeedViewController.h */,
+				3A80EB2218D62C4D0023A9C7 /* PSActivityFeedViewController.m */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		3A80EB2418D62C780023A9C7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EB2518D62C870023A9C7 /* PSFindFriendsViewController.h */,
+				3A80EB2618D62C870023A9C7 /* PSFindFriendsViewController.m */,
+				3A80EB2718D62C870023A9C7 /* PSSettingsActionSheetDelegate.h */,
+				3A80EB2818D62C870023A9C7 /* PSSettingsActionSheetDelegate.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		3A80EB2B18D62C8A0023A9C7 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EB2C18D62C980023A9C7 /* PSTabBarController.h */,
+				3A80EB2D18D62C980023A9C7 /* PSTabBarController.m */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		3A80EB2F18D62E720023A9C7 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EB3018D62E720023A9C7 /* MBProgressHUD.h */,
+				3A80EB3118D62E720023A9C7 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			path = Libraries/MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		3A80EB3218D62E720023A9C7 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EB3318D62E720023A9C7 /* Reachability.h */,
+				3A80EB3418D62E720023A9C7 /* Reachability.m */,
+			);
+			name = Reachability;
+			path = Libraries/Reachability;
+			sourceTree = "<group>";
+		};
+		3A80EB3518D62E720023A9C7 /* UIImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				3A80EB3618D62E720023A9C7 /* UIImage+ImageEffects.h */,
+				3A80EB3718D62E720023A9C7 /* UIImage+ImageEffects.m */,
+			);
+			name = UIImageEffects;
+			path = Libraries/UIImageEffects;
+			sourceTree = "<group>";
+		};
 		3AA8B58F18BC24C8006A0E88 = {
 			isa = PBXGroup;
 			children = (
+				3A80EACE18D61C6F0023A9C7 /* Catagories */,
+				3A80EAD818D61D5E0023A9C7 /* Views */,
 				8EFD6C9E18BC3D7900EAD546 /* Controllers */,
 				3AA8B5A118BC24C8006A0E88 /* PartyStories */,
 				3AA8B5BA18BC24C8006A0E88 /* PartyStoriesTests */,
@@ -184,8 +482,12 @@
 		3AA8B5A118BC24C8006A0E88 /* PartyStories */ = {
 			isa = PBXGroup;
 			children = (
-				8EFD6C9B18BC34D700EAD546 /* PSMenuViewController.h */,
-				8EFD6C9C18BC34D700EAD546 /* PSMenuViewController.m */,
+				3A80EAE318D620920023A9C7 /* PSCache.h */,
+				3A80EAE418D620920023A9C7 /* PSCache.m */,
+				3A80EAE518D620920023A9C7 /* PSConstants.h */,
+				3A80EAE618D620920023A9C7 /* PSConstants.m */,
+				3A80EACB18D61C380023A9C7 /* PSUtility.h */,
+				3A80EACC18D61C380023A9C7 /* PSUtility.m */,
 				3AA8B5AA18BC24C8006A0E88 /* PSAppDelegate.h */,
 				3AA8B5AB18BC24C8006A0E88 /* PSAppDelegate.m */,
 				3AA8B5AD18BC24C8006A0E88 /* Images.xcassets */,
@@ -226,6 +528,10 @@
 		8EB4FEA518BC2E900022BF8E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				3A80EB2F18D62E720023A9C7 /* MBProgressHUD */,
+				3A80EB3218D62E720023A9C7 /* Reachability */,
+				3A80EB3518D62E720023A9C7 /* UIImageEffects */,
+				3A80EAEC18D624080023A9C7 /* TTTTimeIntervalFormatter */,
 				8EB4FEA618BC2F570022BF8E /* RESideMenu */,
 			);
 			name = Libraries;
@@ -248,16 +554,21 @@
 		8EFD6C9E18BC3D7900EAD546 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8EFD6C9F18BC3DE900EAD546 /* PSMenuNavigationViewController.h */,
-				8EFD6CA018BC3DE900EAD546 /* PSMenuNavigationViewController.m */,
+				3A80EB2B18D62C8A0023A9C7 /* TabBar */,
+				3A80EB2418D62C780023A9C7 /* Settings */,
+				3A80EB2018D62C3F0023A9C7 /* Activity */,
+				3A80EB1618D62B5F0023A9C7 /* Home */,
+				3A80EB0F18D629510023A9C7 /* Login */,
+				3A80EAF018D626370023A9C7 /* Detail */,
+				3A80EADF18D61E350023A9C7 /* Menu */,
+				3A80EADE18D61E060023A9C7 /* MenuNavigation */,
+				3A80EADD18D61DF30023A9C7 /* TakePhoto */,
 				8EB4FEA018BC27640022BF8E /* PSPartyGalleryViewController.h */,
 				8EB4FEA118BC27640022BF8E /* PSPartyGalleryViewController.m */,
 				8EB4FEA218BC27640022BF8E /* PSPartyGalleryViewController.xib */,
 				8EFD6CA718BC3F8500EAD546 /* PSRankingsViewController.h */,
 				8EFD6CA818BC3F8500EAD546 /* PSRankingsViewController.m */,
 				8EFD6CA918BC3F8500EAD546 /* PSRankingsViewController.xib */,
-				8EFD6CAC18BC3FB600EAD546 /* PSAccountViewController.h */,
-				8EFD6CAD18BC3FB600EAD546 /* PSAccountViewController.m */,
 				8EFD6CAE18BC3FB600EAD546 /* PSAccountViewController.xib */,
 				8EFD6CB118BC3FD300EAD546 /* PSSettingsViewController.h */,
 				8EFD6CB218BC3FD300EAD546 /* PSSettingsViewController.m */,
@@ -311,7 +622,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PS;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Matthew Ao";
 				TargetAttributes = {
 					3AA8B5B218BC24C8006A0E88 = {
@@ -366,17 +677,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A80EB0218D628A70023A9C7 /* PSLoadMoreCell.m in Sources */,
+				3A80EB1F18D62BD90023A9C7 /* PSPhotoTimelineViewController.m in Sources */,
+				3A80EB2318D62C4D0023A9C7 /* PSActivityFeedViewController.m in Sources */,
 				8EB4FEA318BC27640022BF8E /* PSPartyGalleryViewController.m in Sources */,
 				3AA8B5A818BC24C8006A0E88 /* main.m in Sources */,
 				3AA8B5AC18BC24C8006A0E88 /* PSAppDelegate.m in Sources */,
+				3A80EAE718D620920023A9C7 /* PSCache.m in Sources */,
+				3A80EB1D18D62BD90023A9C7 /* PSAccountViewController.m in Sources */,
 				8EFD6C9D18BC34D700EAD546 /* PSMenuViewController.m in Sources */,
+				3A80EAD518D61C7B0023A9C7 /* UIImage+AlphaAdditions.m in Sources */,
+				3A80EB3918D62E720023A9C7 /* Reachability.m in Sources */,
+				3A80EAFB18D627210023A9C7 /* PSBaseTextCell.m in Sources */,
+				3A80EA9318D61B030023A9C7 /* PSEditPhotoViewController.m in Sources */,
 				8EFD6CA118BC3DE900EAD546 /* PSMenuNavigationViewController.m in Sources */,
 				8EFD6CB418BC3FD300EAD546 /* PSSettingsViewController.m in Sources */,
+				3A80EB3A18D62E720023A9C7 /* UIImage+ImageEffects.m in Sources */,
+				3A80EB2A18D62C870023A9C7 /* PSSettingsActionSheetDelegate.m in Sources */,
+				3A80EB0518D628C70023A9C7 /* PSPhotoCell.m in Sources */,
 				8EFD6CAA18BC3F8500EAD546 /* PSRankingsViewController.m in Sources */,
+				3A80EB1E18D62BD90023A9C7 /* PSHomeViewController.m in Sources */,
+				3A80EB1418D629660023A9C7 /* PSLogInViewController.m in Sources */,
+				3A80EB2918D62C870023A9C7 /* PSFindFriendsViewController.m in Sources */,
+				3A80EAFA18D627210023A9C7 /* PSActivityCell.m in Sources */,
 				8EB4FEAE18BC2F570022BF8E /* RESideMenu.m in Sources */,
+				3A80EAF318D626650023A9C7 /* PSPhotoDetailsViewController.m in Sources */,
+				3A80EAEF18D624080023A9C7 /* TTTTimeIntervalFormatter.m in Sources */,
+				3A80EAEB18D6234D0023A9C7 /* PSProfileImageView.m in Sources */,
+				3A80EAE218D61EA10023A9C7 /* PSPhotoHeaderView.m in Sources */,
+				3A80EB1518D629660023A9C7 /* PSWelcomeViewController.m in Sources */,
+				3A80EAC918D61B980023A9C7 /* PSPhotoDetailsFooterView.m in Sources */,
+				3A80EACA18D61B980023A9C7 /* PSPhotoDetailsHeaderView.m in Sources */,
+				3A80EAD718D61C7B0023A9C7 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				8EB4FEAD18BC2F570022BF8E /* RECommonFunctions.m in Sources */,
+				3A80EB0118D628A70023A9C7 /* PSImageView.m in Sources */,
 				8EB4FEAF18BC2F570022BF8E /* UIViewController+RESideMenu.m in Sources */,
-				8EFD6CAF18BC3FB600EAD546 /* PSAccountViewController.m in Sources */,
+				3A80EAD618D61C7B0023A9C7 /* UIImage+ResizeAdditions.m in Sources */,
+				3A80EB2E18D62C980023A9C7 /* PSTabBarController.m in Sources */,
+				3A80EB3818D62E720023A9C7 /* MBProgressHUD.m in Sources */,
+				3A80EAFC18D627210023A9C7 /* PSFindFriendsCell.m in Sources */,
+				3A80EB0E18D628D10023A9C7 /* PSSettingsButtonItem.m in Sources */,
+				3A80EACD18D61C380023A9C7 /* PSUtility.m in Sources */,
+				3A80EAE818D620920023A9C7 /* PSConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +764,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -461,7 +802,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -527,7 +867,6 @@
 		3AA8B5C818BC24C8006A0E88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PartyStories.app/PartyStories";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -550,7 +889,6 @@
 		3AA8B5C918BC24C8006A0E88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PartyStories.app/PartyStories";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

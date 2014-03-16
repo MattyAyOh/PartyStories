@@ -44,4 +44,9 @@
    // Dispose of any resources that can be recreated.
 }
 
+- (void)showMenu
+{
+    [self.sideMenuViewController presentMenuViewController];
+}
+
 @end
