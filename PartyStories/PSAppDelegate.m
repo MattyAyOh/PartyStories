@@ -36,7 +36,7 @@
                                                                        menuViewController:menuViewController];
 
    sideMenuViewController.panGestureEnabled = NO;
-   sideMenuViewController.backgroundImage = [UIImage imageNamed:@"Stars"];
+   sideMenuViewController.backgroundImage = [UIImage imageNamed:@"MenuBackground"];
    self.window.rootViewController = sideMenuViewController;
 
    [self.window makeKeyAndVisible];
