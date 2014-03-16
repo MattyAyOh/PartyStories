@@ -35,6 +35,7 @@
    RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
                                                                        menuViewController:menuViewController];
 
+   sideMenuViewController.panGestureEnabled = NO;
    sideMenuViewController.backgroundImage = [UIImage imageNamed:@"Stars"];
    self.window.rootViewController = sideMenuViewController;
 

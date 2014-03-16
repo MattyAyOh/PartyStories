@@ -7,12 +7,17 @@
 //
 
 #import "PSMenuViewController.h"
+#import "PSMenuNavigationViewController.h"
 #import "PSPartyGalleryViewController.h"
+#import "PSAccountViewController.h"
+#import "PSRankingsViewController.h"
+#import "PSSettingsViewController.h"
 #import "RESideMenu.h"
 
 @interface PSMenuViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, readwrite, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) NSArray *psViewControllers;
 
 @end
 
@@ -22,8 +27,14 @@
 {
    [super viewDidLoad];
    self.tableView = ({
-      UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, (self.view.frame.size.height - 54 * 5) / 2.0f, self.view.frame.size.width, 54 * 5) style:UITableViewStylePlain];
-      tableView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
+      CGRect tableFrame = CGRectMake(0, (self.view.frame.size.height - 54 * 5) * .5f,
+                                     self.view.frame.size.width, 54 * 5);
+      UITableView *tableView = [[UITableView alloc] initWithFrame:tableFrame
+                                                            style:UITableViewStylePlain];
+
+      tableView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin |
+                                   UIViewAutoresizingFlexibleBottomMargin |
+                                   UIViewAutoresizingFlexibleWidth;
       tableView.delegate = self;
       tableView.dataSource = self;
       tableView.opaque = NO;
@@ -35,27 +46,38 @@
       tableView.bounces = NO;
       tableView;
    });
+
+   [self setupPSViewControllers];
    [self.view addSubview:self.tableView];
 }
 
-#pragma mark -
-#pragma mark UITableView Delegate
+#pragma mark - Helper Methods
+- (void)setupPSViewControllers
+{
+   self.psViewControllers = @[[[PSPartyGalleryViewController alloc] init],
+                              [[PSRankingsViewController alloc] init],
+                              [[PSAccountViewController alloc] init],
+                              [[PSSettingsViewController alloc] init]];
+}
 
+#pragma mark - UITableView Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-   switch (indexPath.row) {
-      default:
-         self.sideMenuViewController.contentViewController =
-         [[UINavigationController alloc] initWithRootViewController:[[PSPartyGalleryViewController alloc] init]];
-         [self.sideMenuViewController hideMenuViewController];
-         break;
-   }
+   PSMenuNavigationViewController *viewController = [self.psViewControllers objectAtIndex:indexPath.row];
+   self.sideMenuViewController.contentViewController = [[UINavigationController alloc] initWithRootViewController:viewController];
+   [self.sideMenuViewController hideMenuViewController];
+//   switch (indexPath.row)
+//   {
+//      default:
+//         self.sideMenuViewController.contentViewController =
+//         [[UINavigationController alloc] initWithRootViewController:[[PSPartyGalleryViewController alloc] init]];
+//         [self.sideMenuViewController hideMenuViewController];
+//         break;
+//   }
 }
 
-#pragma mark -
-#pragma mark UITableView Datasource
-
+#pragma mark - UITableView Datasource
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
    return 54;
@@ -68,13 +90,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-   return 5;
+   return [self.psViewControllers count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
    static NSString *cellIdentifier = @"Cell";
-
    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 
    if (cell == nil) {
@@ -86,8 +107,8 @@
       cell.selectedBackgroundView = [[UIView alloc] init];
    }
 
-   NSArray *titles = @[@"Home", @"Calendar", @"Profile", @"Settings", @"Log Out"];
-   NSArray *images = @[@"IconHome", @"IconCalendar", @"IconProfile", @"IconSettings", @"IconEmpty"];
+   NSArray *titles = @[@"Gallery", @"Rankings", @"Account", @"Settings"];
+   NSArray *images = @[@"IconHome", @"IconCalendar", @"IconProfile", @"IconSettings"];
    cell.textLabel.text = titles[indexPath.row];
    cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
 

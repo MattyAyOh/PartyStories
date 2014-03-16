@@ -1,5 +1,5 @@
 //
-//  PSPartyGalleryViewController.h
+//  PSRankingsViewController.h
 //  PartyStories
 //
 //  Created by Gregory Klein on 2/24/14.
@@ -8,5 +8,6 @@
 
 #import "PSMenuNavigationViewController.h"
 
-@interface PSPartyGalleryViewController : PSMenuNavigationViewController
+@interface PSRankingsViewController : PSMenuNavigationViewController
+
 @end
