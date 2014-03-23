@@ -6,7 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PSPartyGalleryViewController">
             <connections>
-                <outlet property="imageview" destination="kWx-xE-EJD" id="J3n-hS-Fw4"/>
                 <outlet property="photoScrollView" destination="gov-BT-Es5" id="v2F-Cg-hTn"/>
                 <outlet property="view" destination="1" id="2"/>
             </connections>
@@ -23,12 +22,8 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWx-xE-EJD">
-                    <rect key="frame" x="60" y="49" width="200" height="200"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kg9-MV-W7E">
-                    <rect key="frame" x="246" y="134" width="79" height="30"/>
+                    <rect key="frame" x="241" y="65" width="79" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Picture">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,7 +33,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wp3-Vb-AA5">
-                    <rect key="frame" x="-5" y="134" width="75" height="30"/>
+                    <rect key="frame" x="0.0" y="65" width="75" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Refresh">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,7 +43,7 @@
                     </connections>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gov-BT-Es5">
-                    <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                    <rect key="frame" x="0.0" y="97" width="320" height="471"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 </scrollView>
             </subviews>

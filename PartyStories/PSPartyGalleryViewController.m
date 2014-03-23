@@ -2,7 +2,7 @@
 //  PSPartyGalleryViewController.m
 //  PartyStories
 //
-//  Created by Gregory Klein on 2/24/14.
+//  Created by Matthew Ao on 2/24/14.
 //  Copyright (c) 2014 Matthew Ao. All rights reserved.
 //
 
@@ -18,18 +18,8 @@
 #define THUMBNAIL_WIDTH 75
 #define THUMBNAIL_HEIGHT 75
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])
-   {
-   }
-   return self;
-}
-
-
 - (void)setUpImages:(NSArray *)images
 {
-    // Contains a list of all the BUTTONS
     allImages = [images mutableCopy];
     
     // This method sets up the downloaded images and places them nicely in a grid
@@ -37,7 +27,6 @@
     dispatch_async(queue, ^{
         NSMutableArray *imageDataArray = [NSMutableArray array];
         
-        // Iterate over all images and get the data from the PFFile
         for (int i = 0; i < images.count; i++) {
             PFObject *eachObject = [images objectAtIndex:i];
             PFFile *theImage = [eachObject objectForKey:@"imageFile"];
@@ -87,7 +76,11 @@
 }
 
 - (void)buttonTouched:(id)sender {
-    // When picture is touched, open a viewcontroller with the image
+    
+/////////////////////////////////////////////////////////////////////////
+//TODO: When a Thumbnail is pressed, go to PSPhotoDetailsViewController//
+/////////////////////////////////////////////////////////////////////////
+
 //    PFObject *theObject = (PFObject *)[allImages objectAtIndex:[sender tag]];
 //    PFFile *theImage = [theObject objectForKey:@"imageFile"];
 //    
@@ -107,8 +100,6 @@
     
     HUD = [[MBProgressHUD alloc] initWithView:self.view];
     [self.view addSubview:HUD];
-    
-    // Set determinate mode
     HUD.mode = MBProgressHUDModeDeterminate;
     HUD.delegate = self;
     HUD.labelText = @"Uploading";
@@ -126,7 +117,7 @@
             
             // The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
             // Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
-            HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+//            HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
             
             // Set custom view mode
             HUD.mode = MBProgressHUDModeCustomView;
@@ -352,6 +343,14 @@
 - (void)showMenu
 {
     [self.sideMenuViewController presentMenuViewController];
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])
+    {
+    }
+    return self;
 }
 
 @end
