@@ -17,6 +17,10 @@
     NSMutableArray *allImages;
     UIImage *image;
     
+    
+
+    
+    
     MBProgressHUD *HUD;
     MBProgressHUD *refreshHUD;
 }

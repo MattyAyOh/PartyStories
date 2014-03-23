@@ -283,12 +283,10 @@
     [super viewDidLoad];
     allImages = [[NSMutableArray alloc] init];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu"
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:(UIImage *) [[UIImage imageNamed:@"IconMenu"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
                                                                              style:UIBarButtonItemStylePlain
                                                                             target:self
                                                                             action:@selector(showMenu)];
-    
-    
 }
 
 - (IBAction)TakePhoto {
@@ -297,6 +295,14 @@
     [picker setSourceType:UIImagePickerControllerSourceTypeCamera];
     [self presentViewController:picker animated:YES completion:NULL];
     //    [picker release];
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 - (IBAction)ChooseExisting {
