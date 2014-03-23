@@ -281,6 +281,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     allImages = [[NSMutableArray alloc] init];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:(UIImage *) [[UIImage imageNamed:@"IconMenu"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
