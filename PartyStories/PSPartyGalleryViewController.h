@@ -13,7 +13,7 @@
     UIImagePickerController *picker;
     UIImagePickerController *picker2;
     IBOutlet UIImageView *imageview;
-    IBOutlet UICollectionView *photoScrollView;
+    IBOutlet UIScrollView *photoScrollView;
     NSMutableArray *allImages;
     UIImage *image;
     

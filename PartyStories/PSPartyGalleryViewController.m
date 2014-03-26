@@ -13,10 +13,10 @@
 @implementation PSPartyGalleryViewController
 
 #define PADDING_TOP 0 
-#define PADDING 4
-#define THUMBNAIL_COLS 4
-#define THUMBNAIL_WIDTH 75
-#define THUMBNAIL_HEIGHT 75
+#define PADDING 8
+#define THUMBNAIL_COLS 2
+#define THUMBNAIL_WIDTH 150
+#define THUMBNAIL_HEIGHT 160
 
 - (void)setUpImages:(NSArray *)images
 {
@@ -63,7 +63,7 @@
             }
             
             // Size the grid accordingly
-            int rows = arc4random_uniform((uint32_t) images.count / THUMBNAIL_COLS);
+            int rows = images.count / THUMBNAIL_COLS;
             if (((float)images.count / THUMBNAIL_COLS) - rows != 0) {
                 rows++;
             }
@@ -288,6 +288,12 @@
                                                                              style:UIBarButtonItemStylePlain
                                                                             target:self
                                                                             action:@selector(showMenu)];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:(UIImage *) [[UIImage imageNamed:@"IconCamera"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(TakePhoto)];
+    
 }
 
 - (IBAction)TakePhoto {
