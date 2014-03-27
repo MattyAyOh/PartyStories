@@ -10,6 +10,7 @@
 #import "PSPartyGalleryViewController.h"
 #import "PSPhotoDetailsViewController.h"
 #import "RESideMenu.h"
+#import "ODRefreshControl.h"
 
 @implementation PSPartyGalleryViewController
 
@@ -196,6 +197,9 @@
             }
             NSLog(@"Successfully retrieved %lu photos.", (unsigned long)objects.count);
             
+            
+            
+            
             // Retrieve existing objectIDs
             
             NSMutableArray *oldCompareObjectIDArray = [NSMutableArray array];
@@ -283,6 +287,10 @@
 {
     [super viewDidLoad];
     
+    ODRefreshControl *refreshControl = [[ODRefreshControl alloc] initInScrollView:self->photoScrollView];
+    [refreshControl addTarget:self action:@selector(dropViewDidBeginRefreshing:) forControlEvents:UIControlEventValueChanged];
+    
+
     allImages = [[NSMutableArray alloc] init];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:(UIImage *) [[UIImage imageNamed:@"IconMenu"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
@@ -359,5 +367,121 @@
     }
     return self;
 }
+
+- (void)dropViewDidBeginRefreshing:(ODRefreshControl *)refreshControl
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"UserPhoto"];
+    PFUser *user = [PFUser currentUser];
+    [query whereKey:@"user" equalTo:user];
+    [query orderByAscending:@"createdAt"];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            if (refreshHUD) {
+                [refreshHUD hide:YES];
+                
+                refreshHUD = [[MBProgressHUD alloc] initWithView:self.view];
+                [self.view addSubview:refreshHUD];
+                
+                // The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
+                // Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
+                refreshHUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+                
+                // Set custom view mode
+                refreshHUD.mode = MBProgressHUDModeCustomView;
+                
+                refreshHUD.delegate = self;
+            }
+            NSLog(@"Successfully retrieved %lu photos.", (unsigned long)objects.count);
+            
+            
+            
+            
+            // Retrieve existing objectIDs
+            
+            NSMutableArray *oldCompareObjectIDArray = [NSMutableArray array];
+            for (UIView *view in [photoScrollView subviews]) {
+                if ([view isKindOfClass:[UIButton class]]) {
+                    UIButton *eachButton = (UIButton *)view;
+                    [oldCompareObjectIDArray addObject:[eachButton titleForState:UIControlStateReserved]];
+                }
+            }
+            
+            NSMutableArray *oldCompareObjectIDArray2 = [NSMutableArray arrayWithArray:oldCompareObjectIDArray];
+            
+            // If there are photos, we start extracting the data
+            // Save a list of object IDs while extracting this data
+            
+            NSMutableArray *newObjectIDArray = [NSMutableArray array];
+            if (objects.count > 0) {
+                for (PFObject *eachObject in objects) {
+                    [newObjectIDArray addObject:[eachObject objectId]];
+                }
+            }
+            
+            // Compare the old and new object IDs
+            NSMutableArray *newCompareObjectIDArray = [NSMutableArray arrayWithArray:newObjectIDArray];
+            NSMutableArray *newCompareObjectIDArray2 = [NSMutableArray arrayWithArray:newObjectIDArray];
+            if (oldCompareObjectIDArray.count > 0) {
+                // New objects
+                [newCompareObjectIDArray removeObjectsInArray:oldCompareObjectIDArray];
+                // Remove old objects if you delete them using the web browser
+                [oldCompareObjectIDArray removeObjectsInArray:newCompareObjectIDArray2];
+                if (oldCompareObjectIDArray.count > 0) {
+                    // Check the position in the objectIDArray and remove
+                    NSMutableArray *listOfToRemove = [[NSMutableArray alloc] init];
+                    for (NSString *objectID in oldCompareObjectIDArray){
+                        int i = 0;
+                        for (NSString *oldObjectID in oldCompareObjectIDArray2){
+                            if ([objectID isEqualToString:oldObjectID]) {
+                                // Make list of all that you want to remove and remove at the end
+                                [listOfToRemove addObject:[NSNumber numberWithInt:i]];
+                            }
+                            i++;
+                        }
+                    }
+                    
+                    // Remove from the back
+                    NSSortDescriptor *highestToLowest = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:NO];
+                    [listOfToRemove sortUsingDescriptors:[NSArray arrayWithObject:highestToLowest]];
+                    
+                    for (NSNumber *index in listOfToRemove){
+                        [allImages removeObjectAtIndex:[index intValue]];
+                    }
+                }
+            }
+            
+            // Add new objects
+            for (NSString *objectID in newCompareObjectIDArray){
+                for (PFObject *eachObject in objects){
+                    if ([[eachObject objectId] isEqualToString:objectID]) {
+                        NSMutableArray *selectedPhotoArray = [[NSMutableArray alloc] init];
+                        [selectedPhotoArray addObject:eachObject];
+                        
+                        if (selectedPhotoArray.count > 0) {
+                            [allImages addObjectsFromArray:selectedPhotoArray];
+                        }
+                    }
+                }
+            }
+            
+            // Remove and add from objects before this
+            [self setUpImages:allImages];
+            
+        } else {
+            [refreshHUD hide:YES];
+            
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+        
+        [refreshControl beginRefreshing];
+            [refreshControl endRefreshing];
+        
+        
+    }];
+}
+    
 
 @end

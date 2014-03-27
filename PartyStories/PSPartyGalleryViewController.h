@@ -11,8 +11,9 @@
 #import "MBProgressHUD.h"
 
 @interface PSPartyGalleryViewController : PSMenuNavigationViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, MBProgressHUDDelegate> {
-    IBOutlet UIScrollView *photoScrollView;
+    IBOutlet UITableView *photoScrollView;
     NSMutableArray *allImages;
+    
 }
 - (IBAction)TakePhoto;
 - (IBAction)ChooseExisting;
