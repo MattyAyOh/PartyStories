@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Matthew Ao. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "PSPartyGalleryViewController.h"
 #import "PSPhotoDetailsViewController.h"
 #import "RESideMenu.h"
@@ -302,13 +303,6 @@
     [picker setSourceType:UIImagePickerControllerSourceTypeCamera];
     [self presentViewController:picker animated:YES completion:NULL];
     //    [picker release];
-    
-    
-    
-    
-    
-    
-    
     
 }
 
