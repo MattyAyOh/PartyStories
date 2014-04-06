@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
+#import <Parse/Parse.h>
 
-@interface PSMenuNavigationViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, MBProgressHUDDelegate> {
+
+@interface PSMenuNavigationViewController : PFQueryTableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, MBProgressHUDDelegate> {
     IBOutlet UIImageView *imageview;
     UIImagePickerController *picker;
     UIImagePickerController *picker2;
     UIImage *image;
+
     
     MBProgressHUD *HUD;
     MBProgressHUD *refreshHUD;
@@ -23,6 +26,7 @@
 - (IBAction)ChooseExisting;
 - (void)uploadImage:(NSData *)imageData;
 - (IBAction)refresh:(id)sender;
+
 
 
 
