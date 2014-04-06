@@ -136,7 +136,7 @@
      RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
      menuViewController:menuViewController];
      
-     sideMenuViewController.panGestureEnabled = NO;
+     sideMenuViewController.panGestureEnabled = YES;
      sideMenuViewController.backgroundImage = [UIImage imageNamed:@"MenuBackground"];
      self.window.rootViewController = sideMenuViewController;
      

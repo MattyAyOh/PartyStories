@@ -15,10 +15,4 @@
     NSMutableArray *allImages;
     
 }
-- (IBAction)TakePhoto;
-- (IBAction)ChooseExisting;
-- (IBAction)refresh:(id)sender;
-- (void)uploadImage:(NSData *)imageData;
-- (void)setUpImages:(NSArray *)images;
-
 @end
