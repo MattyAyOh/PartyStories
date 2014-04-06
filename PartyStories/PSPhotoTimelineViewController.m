@@ -86,7 +86,7 @@
     [super viewDidAppear:animated];
     
     if (self.shouldReloadOnAppear) {
-        self.shouldReloadOnAppear = NO;
+        self.shouldReloadOnAppear = YES;
         [self loadObjects];
     }
 }
