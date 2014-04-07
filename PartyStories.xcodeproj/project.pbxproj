@@ -274,14 +274,12 @@
 		3A80ED0818D63C370023A9C7 /* Default-fbYOUR_FACEBOOK_APP_ID@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A80EC1C18D63C370023A9C7 /* Default-fbYOUR_FACEBOOK_APP_ID@2x.png */; };
 		3A80ED0918D63C370023A9C7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A80EC1D18D63C370023A9C7 /* Default.png */; };
 		3A80ED0A18D63C370023A9C7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A80EC1E18D63C370023A9C7 /* Default@2x.png */; };
-		3A80ED0B18D63C370023A9C7 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A80EC1F18D63C370023A9C7 /* Icon-72.png */; };
-		3A80ED0C18D63C370023A9C7 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A80EC2018D63C370023A9C7 /* Icon-72@2x.png */; };
 		3AA8B59C18BC24C8006A0E88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA8B59B18BC24C8006A0E88 /* Foundation.framework */; };
 		3AA8B59E18BC24C8006A0E88 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA8B59D18BC24C8006A0E88 /* CoreGraphics.framework */; };
 		3AA8B5A018BC24C8006A0E88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA8B59F18BC24C8006A0E88 /* UIKit.framework */; };
 		3AA8B5A618BC24C8006A0E88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8B5A418BC24C8006A0E88 /* InfoPlist.strings */; };
 		3AA8B5A818BC24C8006A0E88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5A718BC24C8006A0E88 /* main.m */; };
-		3AA8B5AC18BC24C8006A0E88 /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5AB18BC24C8006A0E88 /* PSAppDelegate.m */; };
+		3AA8B5AC18BC24C8006A0E88 /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5AB18BC24C8006A0E88 /* PSAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3AA8B5AE18BC24C8006A0E88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8B5AD18BC24C8006A0E88 /* Images.xcassets */; };
 		3AA8B5B518BC24C8006A0E88 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA8B5B418BC24C8006A0E88 /* XCTest.framework */; };
 		3AA8B5B618BC24C8006A0E88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA8B59B18BC24C8006A0E88 /* Foundation.framework */; };
@@ -294,7 +292,7 @@
 		8EB4FEAE18BC2F570022BF8E /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4FEAA18BC2F570022BF8E /* RESideMenu.m */; };
 		8EB4FEAF18BC2F570022BF8E /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4FEAC18BC2F570022BF8E /* UIViewController+RESideMenu.m */; };
 		8EFD6C9D18BC34D700EAD546 /* PSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6C9C18BC34D700EAD546 /* PSMenuViewController.m */; };
-		8EFD6CA118BC3DE900EAD546 /* PSMenuNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6CA018BC3DE900EAD546 /* PSMenuNavigationViewController.m */; };
+		8EFD6CA118BC3DE900EAD546 /* PSMenuNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6CA018BC3DE900EAD546 /* PSMenuNavigationViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8EFD6CAA18BC3F8500EAD546 /* PSRankingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6CA818BC3F8500EAD546 /* PSRankingsViewController.m */; };
 		8EFD6CAB18BC3F8500EAD546 /* PSRankingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD6CA918BC3F8500EAD546 /* PSRankingsViewController.xib */; };
 		8EFD6CB018BC3FB600EAD546 /* PSAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD6CAE18BC3FB600EAD546 /* PSAccountViewController.xib */; };
@@ -613,8 +611,6 @@
 		3A80EC1C18D63C370023A9C7 /* Default-fbYOUR_FACEBOOK_APP_ID@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-fbYOUR_FACEBOOK_APP_ID@2x.png"; sourceTree = "<group>"; };
 		3A80EC1D18D63C370023A9C7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3A80EC1E18D63C370023A9C7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		3A80EC1F18D63C370023A9C7 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		3A80EC2018D63C370023A9C7 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		3AA8B59818BC24C8006A0E88 /* PartyStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA8B59B18BC24C8006A0E88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3AA8B59D18BC24C8006A0E88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -910,8 +906,6 @@
 				3A80EC1C18D63C370023A9C7 /* Default-fbYOUR_FACEBOOK_APP_ID@2x.png */,
 				3A80EC1D18D63C370023A9C7 /* Default.png */,
 				3A80EC1E18D63C370023A9C7 /* Default@2x.png */,
-				3A80EC1F18D63C370023A9C7 /* Icon-72.png */,
-				3A80EC2018D63C370023A9C7 /* Icon-72@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1411,7 +1405,6 @@
 				3A80ED0018D63C370023A9C7 /* timeline_separator_dark.png in Resources */,
 				3A80ECCB18D63C370023A9C7 /* iconTimelineSelected.png in Resources */,
 				3A80ECCF18D63C370023A9C7 /* load_more.png in Resources */,
-				3A80ED0B18D63C370023A9C7 /* Icon-72.png in Resources */,
 				3A80EC4718D63C370023A9C7 /* backgroundNewActivity@2x.png in Resources */,
 				3A80ECAC18D63C370023A9C7 /* icon_settings@2x.png in Resources */,
 				3A80EC5818D63C370023A9C7 /* buttonCameraSelected.png in Resources */,
@@ -1522,7 +1515,6 @@
 				3A80EC8D18D63C370023A9C7 /* following_button_pressed@2x.png in Resources */,
 				3AA8B5A618BC24C8006A0E88 /* InfoPlist.strings in Resources */,
 				3A80EC3618D63C370023A9C7 /* back_button@2x.png in Resources */,
-				3A80ED0C18D63C370023A9C7 /* Icon-72@2x.png in Resources */,
 				3A80EC4118D63C370023A9C7 /* BackgroundLogin-568h@2x.png in Resources */,
 				3A80EC5418D63C370023A9C7 /* buttonBackSelected.png in Resources */,
 				3A80ECDA18D63C370023A9C7 /* nav_bar_button.png in Resources */,

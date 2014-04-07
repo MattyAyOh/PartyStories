@@ -75,7 +75,7 @@
 
 - (void)showMenu
 {
-   [self.sideMenuViewController presentMenuViewController];
+   [self.sideMenuViewController presentLeftMenuViewController];
 }
 
 - (void)uploadImage:(NSData *)imageData

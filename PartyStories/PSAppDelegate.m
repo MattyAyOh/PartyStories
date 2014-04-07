@@ -133,8 +133,7 @@
      
      PSMenuViewController *menuViewController = [[PSMenuViewController alloc] init];
      
-     RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
-     menuViewController:menuViewController];
+     RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController leftMenuViewController:menuViewController rightMenuViewController:NULL];
      
      sideMenuViewController.panGestureEnabled = YES;
      sideMenuViewController.backgroundImage = [UIImage imageNamed:@"MenuBackground"];
